@@ -25,29 +25,29 @@ public class Ente_Terr {
     private Integer Id;
 	
 	@NonNull
-	@Column(name="CodigoDaneDpto")
+	@Column(name="codigodanedpto")
 	private String CodigoDaneDpto;
 	
 	@NonNull
-	@Column(name="CodigoDaneMun")
+	@Column(name="codigodanemun")
 	private String CodigoDaneMun;
 	
-	@Column(name="Nit")
+	@Column(name="nit")
 	private String Nit;
 	
 	@NonNull
-	@Column(name="RazonSocial")
+	@Column(name="razonsocial")
 	private String RazonSocial;
 	
-	@Column(name="Direccion")
+	@Column(name="direccion")
 	private String Direccion;
 	
-	@Column(name="Telefono")
+	@Column(name="telefono")
 	private String Telefono;
 	
-	@Column(name="PaginaWeb")
+	@Column(name="paginaweb")
 	private String PaginaWeb;
 	
-	@Column(name="EMail")
+	@Column(name="email")
 	private String EMail;	
 }
