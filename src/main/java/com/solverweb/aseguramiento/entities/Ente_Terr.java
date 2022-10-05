@@ -1,5 +1,6 @@
 package com.solverweb.aseguramiento.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,20 +17,37 @@ import lombok.ToString;
 @Table(name="ente_terr")
 @ToString
 @NoArgsConstructor
-public class ente_terr {
+public class Ente_Terr {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int IdEnte_Terr;
+	@Column(name="idente_terr")
+    private Integer Id;
+	
 	@NonNull
+	@Column(name="codigodanedpto")
 	private String CodigoDaneDpto;
+	
 	@NonNull
+	@Column(name="codigodanemun")
 	private String CodigoDaneMun;
+	
+	@Column(name="nit")
 	private String Nit;
+	
 	@NonNull
+	@Column(name="razonsocial")
 	private String RazonSocial;
+	
+	@Column(name="direccion")
 	private String Direccion;
+	
+	@Column(name="telefono")
 	private String Telefono;
+	
+	@Column(name="paginaweb")
 	private String PaginaWeb;
+	
+	@Column(name="email")
 	private String EMail;	
 }
