@@ -71,25 +71,4 @@ public class Ente_TerrREST {
 	      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	    }
 	  }	
-	  
-	  /*
-	  @GetMapping("/entes/{dpto}/{mun}")
-	  public ResponseEntity<Ente_Terr> getEnte_TerrBycodigodane(@PathVariable("dpto") String dpto,
-			  String mun) {
-	  
-			try {
-				List<Ente_Terr> listEnteTerr = new ArrayList<Ente_Terr>();
-				ente_terrRepository.findAll().forEach(listEnteTerr::add);
-
-				if (listEnteTerr.isEmpty()) {
-					return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-				}
-
-				return new ResponseEntity<>(listEnteTerr, HttpStatus.OK);
-
-			} catch (Exception e) {
-				return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
-			}
-	  }
-	  */	  
 }
